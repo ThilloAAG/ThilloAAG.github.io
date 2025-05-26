@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | Portfolio SEG3525</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .project-card {
+            transition: all 0.3s ease;
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-badge {
+            background-color: #f8f9fa;
+            color: var(--text-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: var(--primary-color);">
+                Mon Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html">Méthodologie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-3">Bonjour, je suis Aïssata Gaye</h1>
+            <p class="lead">Étudiante en Génie Informatique et Gestion en Ingénieurie à l'Université d'Ottawa</p>
+        </div>
+    </section>
+
+
+      <!-- About Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="À propos de moi" 
+                         class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="fw-bold mb-4">Qui suis-je ?</h2>
+                    <p class="lead mb-4">Je suis passionnée par la création d'interfaces utilisateurs intuitives et accessibles.</p>
+                    <p>Actuellement Étudiante dans le cours SEG3525, j'apprends les principes fondamentaux du design UX/UI et les techniques de développement front-end.</p>
+                    <p>Mon objectif est de concevoir des expériences numériques qui résolvent des problèmes réels tout en étant esthétiques et faciles à utiliser.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Mes Projets</h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">Découvrez les projets que je vais réaliser dans le cadre du cours </p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Projet 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             class="card-img-top" 
+                             alt="Site de services">
+                        <div class="card-body">
+                            <h5 class="card-title">Site de Services</h5>
+                            <p class="card-text text-muted">Conception d'un site web pour un professionnel</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="project-badge"><i class="far fa-clock me-1"></i>À venir</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             class="card-img-top" 
+                             alt="Petit jeu">
+                        <div class="card-body">
+                            <h5 class="card-title">Jeu Interactif</h5>
+                            <p class="card-text text-muted">Développement d'un jeu simple</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="project-badge"><i class="far fa-clock me-1"></i>À venir</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             class="card-img-top" 
+                             alt="E-commerce">
+                        <div class="card-body">
+                            <h5 class="card-title">Boutique en Ligne</h5>
+                            <p class="card-text text-muted">Design d'une boutique en ligne</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="project-badge"><i class="far fa-clock me-1"></i>À venir</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projet 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="project-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             class="card-img-top" 
+                             alt="Visualisation de données">
+                        <div class="card-body">
+                            <h5 class="card-title">Tableau de Bord</h5>
+                            <p class="card-text text-muted">Visualisation de données complexes</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="project-badge"><i class="far fa-clock me-1"></i>À venir</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-0">&copy; 2025 Mon Portfolio - SEG3525</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
